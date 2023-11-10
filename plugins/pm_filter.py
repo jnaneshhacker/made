@@ -2021,11 +2021,7 @@ async def advantage_spell_chok(client, msg):
         ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply_photo(
-            photo=SPELL_IMG, 
-            caption=script.I_CUDNT.format(mv_rqst),
-            reply_markup=InlineKeyboardMarkup(button)
-        )
+        k = await msg.reply(' ⚠ Error, No Results❗check spelling ')                        
         await asyncio.sleep(30)
         await k.delete()
         return
@@ -2037,12 +2033,8 @@ async def advantage_spell_chok(client, msg):
         ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply_photo(
-            photo=SPELL_IMG, 
-            caption=script.I_CUDNT.format(mv_rqst),
-            reply_markup=InlineKeyboardMarkup(button)
-        )
-        await asyncio.sleep(30)
+        k = await msg.reply('<b> No Results Found </b>\n\n<b>𝐑𝐄𝐀𝐒𝐎N</b>\n\n<b>only type movie name</b>\n\n<b> For example ➢ Leo ✅\nLeo send bro❌\nleo file please❌</b>')
+        await asyncio.sleep(20)
         await k.delete()
         return
     movielist += [movie.get('title') for movie in movies]
@@ -2058,21 +2050,18 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    spell_check_del = await msg.reply_photo(
-        photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn)
-    )
+    spell_check_del = await msg.reply("🔎 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐈𝐬 𝐖𝐫𝐨𝐧𝐠 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐌𝐨𝐯𝐢𝐞 🔎\n\n🔎 ನೀನು ಟೈಪ್ ಮಾಡಿದ ಪದ ಸರಿ ಇಲ್ಲ ಕೆಳಗಡೆ ಇರುವ ಸರಿಯಾದ ಪದ ವನ್ನು ಪ್ರಸ್ ಮಾಡು 🔎\n\n🔎 वर्तनी ग़लत है कृपया नीचे सही वर्तनी चुनें 🔎",
+                     reply_markup=InlineKeyboardMarkup(btn))
     try:
         if settings['auto_delete']:
-            await asyncio.sleep(600)
+            await asyncio.sleep(60)
             await spell_check_del.delete()
     except KeyError:
             grpid = await active_connection(str(msg.from_user.id))
             await save_group_settings(grpid, 'auto_delete', True)
             settings = await get_settings(msg.chat.id)
             if settings['auto_delete']:
-                await asyncio.sleep(600)
+                await asyncio.sleep(60)
                 await spell_check_del.delete()
 
 
