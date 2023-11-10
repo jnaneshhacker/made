@@ -1816,7 +1816,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_text("🔍")
+            m=await message.reply_text("Searching.....🔎")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1969,7 +1969,7 @@ async def auto_filter(client, msg, spoll=False):
             try:
                if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    m=await message.reply_text("🔎")
+                    m=await message.reply_text("Searching.....🔎")
                     await hmm.delete()
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
@@ -1977,7 +1977,7 @@ async def auto_filter(client, msg, spoll=False):
                 await hmm.delete()
         except Exception as e:
             logger.exception(e)
-            m=await message.reply_text("🔎") 
+            m=await message.reply_text("Searching.....🔎") 
             fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
