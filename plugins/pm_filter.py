@@ -1939,9 +1939,9 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>Request Movie : {search}\nRequest Person : {message.from_user.mention}\nRequest Group : {message.chat.title}\n\n</b>"
+            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n🎪 Requested Group 👉 {message.chat.title}\n\n</b>"
         else:
-            cap = f"<b>Request Movie : {search}\nRequest Person : {message.from_user.mention}\nRequest Group : {message.chat.title}\n\n</b>"
+            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n🎪 Requested Group 👉 {message.chat.title}\n\n</b>"
             cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('.mkv') and not x.startswith('.MKV') and not x.startswith('mp4') and not x.startswith('CineVood') and not x.startswith('-') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
