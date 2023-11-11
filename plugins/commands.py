@@ -81,9 +81,9 @@ async def start(client, message):
         if message.command[1] != "subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
+                btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', 'select')])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', callback_data=f"checksub#{kk}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**👇 join our 🍿 channel given below 👇 after join again ask movie in ur group/bot**",
@@ -259,7 +259,7 @@ async def start(client, message):
                 ]
             )
         )
-        await asyncio.sleep(70)
+        await asyncio.sleep(1000)
         await k.edit("<b>Your message is successfully deleted\n\n Again Ask Here : t.me/Rockers_Movie_Requist_Group</b>")
         return
         
@@ -280,7 +280,7 @@ async def start(client, message):
                 ]
             )
         )
-        await asyncio.sleep(70)
+        await asyncio.sleep(1000)
         await k.edit("<b>Your message is successfully deleted!!!\n\n Ask Again Here : t.me/Rockers_Movie_Requist_Group</b>")
         return
         
@@ -329,7 +329,7 @@ async def start(client, message):
             )
             filesarr.append(msg)
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b>This Movie Files/Videos will be deleted in 10 mins (Due to Copyright Issues) Please forward this ALL Files/Videos to your Saved Messages and Start Download there</b>")
-        await asyncio.sleep(20)
+        await asyncio.sleep(1000)
         for x in filesarr:
             await x.delete()
         await k.edit_text("<b>your All Files/Videos is successfully deleted\n\nask Again Here :- t.me/Rockers_Movie_Requist_Group</b>")
@@ -356,7 +356,7 @@ async def start(client, message):
                     ]
                 )
             )
-            await asyncio.sleep(70)
+            await asyncio.sleep(1000)
             await k.edit("<b>Your message is successfully deleted\n\n Ask Again Here :- t.me/Rockers_Movie_Requist_Group</b>")
             return
     user = message.from_user.id
@@ -401,7 +401,7 @@ async def start(client, message):
                 InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
             ]]
             k = await msg.reply("<b>This Movie File/Video will be deleted in 10 mins (Due to Copyright Issues) Please forward this File/Video to your Saved Messages and Start Download there</b>",quote=True)
-            await asyncio.sleep(20)
+            await asyncio.sleep(1000)
             await msg.delete()
             await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
@@ -447,7 +447,7 @@ async def start(client, message):
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
     k = await msg.reply("<b>This Movie File/Video will be deleted in 10 mins (Due to Copyright Issues) Please forward this File/Video to your Saved Messages and Start Download there</b>",quote=True)
-    await asyncio.sleep(20)
+    await asyncio.sleep(1000)
     await msg.delete()
     await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
