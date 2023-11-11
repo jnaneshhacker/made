@@ -48,7 +48,7 @@ async def start(client, message):
                     InlineKeyboardButton('Ott Movie', url="https://t.me/+D7L-rX9lKA43MGRl"),
                     InlineKeyboardButton('Adult channel', url="https://t.me/+Ce98xoyvoLcwYThl")
                 ],[
-                    InlineKeyboardButton('Movie Request Group, url="https://t.me/Rockers_Movie_Requist_Group")
+                    InlineKeyboardButton('Movie Request Group', url="https://t.me/Rockers_Movie_Requist_Group")
                 ],[
                     InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', url="t.me/alonekingjnanesh")
                   ]]
@@ -98,7 +98,7 @@ async def start(client, message):
                     InlineKeyboardButton('Ott Movie', url="https://t.me/+D7L-rX9lKA43MGRl"),
                     InlineKeyboardButton('Adult channel', url="https://t.me/+Ce98xoyvoLcwYThl")
                 ],[
-                    InlineKeyboardButton('Movie Request Group, url="https://t.me/Rockers_Movie_Requist_Group")
+                    InlineKeyboardButton('Movie Request Group', url="https://t.me/Rockers_Movie_Requist_Group")
                 ],[
                     InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', url="t.me/alonekingjnanesh")
                   ]]
