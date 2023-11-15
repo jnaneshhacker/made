@@ -1,6 +1,8 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
-I Am Autofilter Bot With Shartner support u can also add ur shartner earn money 
+I Am Autofilter Bot With Shartner support u can also add ur shartner earn money
+
+command /shortlink OnePageLink.in 6e8c7bd83339d97a5a695a66effd5b5cf2382057 
 
 🫂 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/alonekingjnanesh'>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑</a></b>"""
 
@@ -161,9 +163,9 @@ Nᴀᴍᴇ - {}"""
     I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
 
-    MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
+    MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ...🫂"""
 
-    TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
+    TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ...🍿"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
@@ -218,6 +220,13 @@ go back To Ur Group And Type Again U get File 📁"""
     CAPTION = """ 
 <b>
 🗂 {file_name}
+
+🍿 Theater print movies 
+👉 @Theater_Print_Movies_Search_bot
+
+🔞 Adult Video 
+👉 @kannadavideosnewbot
+👉 @kannada_nudi_video_bot
 </b>"""
     
     IMDB_TEMPLATE_TXT = """
