@@ -227,6 +227,7 @@ go back To Ur Group And Type Again U get File 📁"""
 🔞 Adult Video 
 👉 @kannadavideosnewbot
 👉 @kannada_nudi_video_bot
+👉 t.me/+y4Yfxe221o5iZjQ9
 </b>"""
     
     IMDB_TEMPLATE_TXT = """
