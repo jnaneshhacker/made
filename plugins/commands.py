@@ -74,6 +74,9 @@ async def start(client, message):
             [
                 InlineKeyboardButton(
                     "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                ),
+                 InlineKeyboardButton(
+                    "🔥💦 adult channel 💦🔥", url=f't.me/+y4Yfxe221o5iZjQ9'
                 )
             ]
         ]
