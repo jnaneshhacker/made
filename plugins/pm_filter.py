@@ -1813,7 +1813,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_text("Searching.....🔎")
+            m=await message.reply_text("🚀")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1842,7 +1842,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_text("Searching.....🔎")
+        m=await message.reply_text("🚀")
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -1939,9 +1939,9 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n🎪 Requested Group 👉 {message.chat.title}\n\n</b>"
+            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n\n</b>"
         else:
-            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n🎪 Requested Group 👉 {message.chat.title}\n\n</b>"
+            cap = f"<b>🍿 Requested Movie 👉 {search}\n🙋‍♂️ Requested Person 👉 {message.from_user.mention}\n\n</b>"
             cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('mp4') and not x.startswith('CineVood') and not x.startswith('-') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
@@ -1966,7 +1966,7 @@ async def auto_filter(client, msg, spoll=False):
             try:
                if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    m=await message.reply_text("Searching.....🔎")
+                    m=await message.reply_text("🚀")
                     await hmm.delete()
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
@@ -1974,7 +1974,7 @@ async def auto_filter(client, msg, spoll=False):
                 await hmm.delete()
         except Exception as e:
             logger.exception(e)
-            m=await message.reply_text("Searching.....🔎") 
+            m=await message.reply_text("🚀") 
             fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
