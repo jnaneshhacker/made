@@ -23,12 +23,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Ott Movies', url="https://t.me/+D7L-rX9lKA43MGRl"),
-                    InlineKeyboardButton('adult channel', url="https://t.me/+Ce98xoyvoLcwYThl")
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -43,15 +38,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Ott Movie', url="https://t.me/+D7L-rX9lKA43MGRl"),
-                    InlineKeyboardButton('Adult channel', url="https://t.me/+Ce98xoyvoLcwYThl")
-                ],[
-                    InlineKeyboardButton('Movie Request Group', url="https://t.me/Rockers_Movie_Requist_Group")
-                ],[
-                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', url="t.me/alonekingjnanesh")
-                  ]]
+                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAJnLmTuFB3tbjsPSKlQYaKfUux_RBtzAAIEAAPBJDExieUdbguzyBAeBA") 
         await asyncio.sleep(1)
@@ -73,10 +61,19 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                    "channel 1", url=f'https://t.me/+Q8sNdxMpqYVjZTA9'
                 ),
                  InlineKeyboardButton(
-                    "🔥💦 adult channel 💦🔥", url=f't.me/+y4Yfxe221o5iZjQ9'
+                    "channel 2", url=f'https://t.me/+P-wgbt_2dlU3MTM1'
+                ),
+                InlineKeyboardButton(
+                    "channel 3", url=f'https://t.me/+8K8gz7k6Ry05YzZl'
+                ),
+                InlineKeyboardButton(
+                    "channel 4", url=f'https://t.me/+9U8kUzYU-Ec3ZDQ9'
+                ),
+                InlineKeyboardButton(
+                    "Cʜᴀɴɴᴇʟ 5", url=invite_link.invite_link
                 )
             ]
         ]
@@ -96,14 +93,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Ott Movie', url="https://t.me/+D7L-rX9lKA43MGRl"),
-                    InlineKeyboardButton('Adult channel', url="https://t.me/+Ce98xoyvoLcwYThl")
-                ],[
-                    InlineKeyboardButton('Movie Request Group', url="https://t.me/Rockers_Movie_Requist_Group")
-                ],[
-                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', url="t.me/alonekingjnanesh")
+                    InlineKeyboardButton(' Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
