@@ -72,7 +72,6 @@ async def start(client, message):
                 InlineKeyboardButton(
                     "channel 4", url=f'https://t.me/+4Fxg05W56SVkOTY1'
                 ),
-            ][
                 InlineKeyboardButton(
                     "channel 5", url=f'https://t.me/+nlo1GNVDGIczZWE9'
                 ),
@@ -96,7 +95,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', callback_data=f"checksub#{kk}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**👇 join our 🍿 channel given below 👇 after join again ask movie in ur group/bot/n/nSUBSCRIBE :- https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW**",
+            text="**👇 join our 🍿 channel given below 👇 after join again ask movie in ur group/bot/ SUBSCRIBE :- https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
