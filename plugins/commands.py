@@ -38,7 +38,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                     InlineKeyboardButton('BOT BACKUP CHANNEL', url=f'http://t.me/ROCKERSBACKUP')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAJgB2Z1zXiLsuiTGtUr-JCyvwt3NThEAAJlDAACAX3ZVvVpgoIy8coVNQQ") 
@@ -72,6 +72,7 @@ async def start(client, message):
                 InlineKeyboardButton(
                     "channel 4", url=f'https://t.me/+4Fxg05W56SVkOTY1'
                 ),
+            ][
                 InlineKeyboardButton(
                     "channel 5", url=f'https://t.me/+nlo1GNVDGIczZWE9'
                 ),
@@ -102,7 +103,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton(' Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                     InlineKeyboardButton('BOT BACKUP CHANNEL', url=f'http://t.me/ROCKERSBACKUP')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -154,7 +155,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP')                         
                         ]
                        ]
                     )
@@ -170,7 +171,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP')                         
                         ]
                        ]
                     )
@@ -324,7 +325,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP')                         
                         ]
                        ]
                     )
@@ -383,7 +384,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP')                         
                         ]
                        ]
                     )
@@ -440,7 +441,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP')                         
                         ]
                        ]
                     )
