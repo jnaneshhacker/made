@@ -1,10 +1,8 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-I Am Autofilter Bot With Shartner support u can also add ur shartner earn money
+    START_TXT = """<em>Hᴇʟʟᴏ {}, its good to see u again
 
-command /shortlink OnePageLink.in 6e8c7bd83339d97a5a695a66effd5b5cf2382057 
-
-🫂 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/alonekingjnanesh'>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑</a></b>"""
+i have all type of movies and webseries some animes so
+just type correct movie name in below u get direct file</em>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
@@ -144,24 +142,18 @@ Nᴀᴍᴇ - {}"""
 ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇQᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
 
     CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
-ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
+ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ below"""
 
-    I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
+    I_CUDNT = """<b>sorry {} no file were found
+    
+    i think u typed wrong movie name 
+    i think u typed extra words 
+    only type movies name dont add extra words
+    
+    FORMAT :- kgf 
+    WRONG FORMATE :- kgf 2019</b>"""
 
-ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
-
-ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
-
-ᴇxᴀᴍᴘʟᴇ : Uncharted or Uncharted 2022 or Uncharted En
-
-ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
-
-ᴇxᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
-
-🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
-
-    I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
-ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
+    I_CUD_NT = """go to google and check spelling and send correct name"""
 
     MVE_NT_FND = """𝐓𝐡𝐢𝐬 𝐌𝐨𝐯𝐢𝐞 𝐅𝐢𝐥𝐞𝐬 𝐍𝐨𝐭 𝐀𝐝𝐝𝐞𝐝 𝐀𝐫𝐞 𝐓𝐡𝐢𝐬 𝐌𝐨𝐯𝐢𝐞 𝐍𝐨𝐭 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐝"""
 
@@ -225,7 +217,6 @@ go back To Ur Group And Type Again U get File 📁"""
 👉 @Theater_Print_Movies_Search_bot
 
 🔞 Adult Video 
-👉 @kannadavideosnewbot
 👉 @kannada_nudi_video_bot
 👉 t.me/+y4Yfxe221o5iZjQ9
 </b>"""
