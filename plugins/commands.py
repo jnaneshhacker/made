@@ -23,7 +23,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('BOT BACKUP CHANNEL', url=f'http://t.me/ROCKERSBACKUP')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -61,19 +61,29 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "channel 1", url=f'https://t.me/+Q8sNdxMpqYVjZTA9'
+                    "channel 1", url=f'https://t.me/+GwoURlq-hr1hOTc9'
                 ),
                  InlineKeyboardButton(
-                    "channel 2", url=f'https://t.me/+P-wgbt_2dlU3MTM1'
+                    "channel 2", url=f'https://t.me/+hJLWDbymVZsyOTk1'
                 ),
                 InlineKeyboardButton(
-                    "channel 3", url=f'https://t.me/+8K8gz7k6Ry05YzZl'
+                    "channel 3", url=f'https://t.me/+sIUMbwiAsIo4Mjll'
                 ),
                 InlineKeyboardButton(
-                    "channel 4", url=f'https://t.me/+9U8kUzYU-Ec3ZDQ9'
+                    "channel 4", url=f'https://t.me/+4Fxg05W56SVkOTY1'
+                ),
+            ][
+                InlineKeyboardButton(
+                    "channel 5", url=f'https://t.me/+nlo1GNVDGIczZWE9'
                 ),
                 InlineKeyboardButton(
-                    "Cʜᴀɴɴᴇʟ 5", url=invite_link.invite_link
+                    "channel 6", url=f'https://t.me/+5MMPfVCCiAU5MjU1'
+                ),
+                InlineKeyboardButton(
+                    "channel 7", url=f'https://t.me/+y4Yfxe221o5iZjQ9'
+                ),
+                InlineKeyboardButton(
+                    "Cʜᴀɴɴᴇʟ 8", url=invite_link.invite_link
                 )
             ]
         ]
@@ -86,7 +96,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', callback_data=f"checksub#{kk}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**👇 join our 🍿 channel given below 👇 after join again ask movie in ur group/bot**",
+            text="**👇 join our 🍿 channel given below 👇 after join again ask movie in ur group/bot/n/nSUBSCRIBE :- https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
