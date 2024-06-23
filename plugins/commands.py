@@ -58,34 +58,22 @@ async def start(client, message):
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
-        btn = [
-            [
-                InlineKeyboardButton(
-                    "channel 1", url=f'https://t.me/+GwoURlq-hr1hOTc9'
-                ),
-                 InlineKeyboardButton(
-                    "channel 2", url=f'https://t.me/+hJLWDbymVZsyOTk1'
-                ),
-                InlineKeyboardButton(
-                    "channel 3", url=f'https://t.me/+sIUMbwiAsIo4Mjll'
-                ),
-                InlineKeyboardButton(
-                    "channel 4", url=f'https://t.me/+4Fxg05W56SVkOTY1'
-                ),
-                InlineKeyboardButton(
-                    "channel 5", url=f'https://t.me/+nlo1GNVDGIczZWE9'
-                ),
-                InlineKeyboardButton(
-                    "channel 6", url=f'https://t.me/+5MMPfVCCiAU5MjU1'
-                ),
-                InlineKeyboardButton(
-                    "channel 7", url=f'https://t.me/+y4Yfxe221o5iZjQ9'
-                ),
-                InlineKeyboardButton(
-                    "Cʜᴀɴɴᴇʟ 8", url=invite_link.invite_link
-                )
-            ]
-        ]
+        btn = [[
+                InlineKeyboardButton("Backup Channel", url=f"https://t.me/+nlo1GNVDGIczZWE9")
+            ],[
+                InlineKeyboardButton("Backup Channel", url=f"https://t.me/+ZE14MSI_yNw1YjJl")
+            ],[
+                InlineKeyboardButton("Backup Channel", url=f"https://t.me/+5UEeo65qHKowOTRl")
+            ],[
+                InlineKeyboardButton("Backup Channel", url=f"https://t.me/+jsgiQjjiyjQ0MTI1")
+            ],[
+                InlineKeyboardButton("Backup Channel", url="https://t.me/+uAi8M0m7oE04YmY1"),
+                InlineKeyboardButton("Backup Channel", url="https://t.me/+Fs7Wt1CbDVszYjc1")
+            ],[
+                InlineKeyboardButton("Subscribe YouTube channel", url=f"https://youtube.com/@Jnentertainment.?si=jQtbAMXFI2sECql2")
+            ],[
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
+        ]]
 
         if message.command[1] != "subscribe":
             try:
